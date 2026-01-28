@@ -1,57 +1,106 @@
-       <div class="content">
-            <!-- LEFT COLUMN -->
-            <div class="column column-left">
-                <!-- MARKET OPPORTUNITY -->
-                <div class="section">
-                    <h3>Market Opportunity</h3>
-                    <div class="market-insight">
-                        <p><strong>2.5M+ EVs</strong> in California | <strong>200K+ chargers</strong> deployed</p>
-                        <p><strong>Reality:</strong> Need 3-5X more chargers. Your location = proven revenue opportunity.</p>
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WattupUSA - Post-Pitch Leave Behind</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-                <!-- REVENUE PROOF -->
-                <div class="section">
-                    <h3>Your Revenue Potential</h3>
-                    <div class="revenue-box">
-                        <div class="label">6 chargers at your location</div>
-                        <div class="stat">$3,240<span style="font-size: 0.8rem; margin-left: 0.3em;">/month</span></div>
-                        <div class="substat">
-                            <div>10-year total</div>
-                            <div class="substat-value">$388,800</div>
-                        </div>
-                    </div>
-                </div>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: #f9fafb;
+            line-height: 1.5;
+            color: #1f2937;
+        }
 
-                <!-- URGENCY CTA -->
-                <div class="call-out">
-                    <div class="urgency-badge">⚡ URGENT</div>
-                    <p><strong>Prime locations lock in 6 months.</strong> First-mover advantage expires fast.</p>
-                    <button class="cta-button" style="width: 100%;">📊 Revenue Calculator</button>
-                </div>
-            </div>
+        .brochure {
+            width: 8.5in;
+            height: 11in;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            overflow: hidden;
+            border-radius: 8px;
+        }
 
-            <!-- RIGHT COLUMN -->
-            <div class="column">
-                <!-- WHY WATTUP -->
-                <div class="section">
-                    <h3>Why Choose WattupUSA</h3>
-                    <div class="trust-item">
-                        <div class="trust-icon">✓</div>
-                        <div class="trust-content">
-                            <p class="title">100% Installation Paid</p>
-                            <p class="details">No capex. We cover all equipment & setup.</p>
-                        </div>
-                    </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">✓</div>
-                        <div class="trust-content">
-                            <p class="title">Full Maintenance Included</p>
-                            <p class="details">24/7 support, repairs, upgrades. SLA guaranteed.</p>
-                        </div>
-                    </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">✓</div>
-                        <div class="trust-content">
-                            <p class="title">10-Year Revenue Guarantee</p>
-                            
+        /* PROFESSIONAL HEADER */
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: white;
+            padding: 1.5rem 2.5rem;
+            text-align: center;
+            border-bottom: 3px solid #38bdf8;
+        }
+
+        .header h1 {
+            font-size: 1.75rem;
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+        }
+
+        .header .subheading {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 0.4rem;
+            color: #cbd5e1;
+            letter-spacing: 0.05em;
+        }
+
+        /* MAIN CONTENT */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.75rem;
+            padding: 1.5rem 2rem;
+            background: #ffffff;
+            overflow-y: auto;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .column-left {
+            border-right: 3px solid #f0f4f8;
+            padding-right: 1.5rem;
+        }
+
+        /* SECTION STYLING */
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #38bdf8;
+        }
+
+        /* KEY TAKEAWAYS */
+        .key-takeaways {
+            background: linear-gradient(135deg, #fef3c7 0%, #fef9e7 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 0.9rem;
+            border-radius: 6px;
+        }
+
+        .key-takeaways .takeaway-item {
+            font-size: 0.78
