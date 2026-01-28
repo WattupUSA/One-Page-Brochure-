@@ -1,6 +1,4 @@
-# One-Page-Brochure-
-        <!-- MAIN CONTENT -->
-        <div class="content">
+       <div class="content">
             <!-- LEFT COLUMN -->
             <div class="column column-left">
                 <!-- MARKET OPPORTUNITY -->
